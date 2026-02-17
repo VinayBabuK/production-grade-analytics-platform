@@ -72,6 +72,51 @@ production-grade-analytics-platform/
 
 ---
 
+## 🛠️ How to Run Locally (Backend)
+
+Follow the steps below to run the FastAPI backend on your local machine.
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone {url}
+cd production-grade-analytics-platform/backend
+```
+
+### 2️⃣ Create a Virtual Environment
+```bash
+python -m venv venv
+```
+
+### 3️⃣ Activate the Virtual Environment (Windows)
+```bash
+venv\Scripts\activate
+```
+You should see (venv) appear in your terminal.
+
+### 4️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5️⃣ Run the FastAPI Server
+```bash
+uvicorn app.main:app --reload
+```
+
+### 🚀 Access the Application
+
+- Application URL: http://127.0.0.1:8000
+- Interactive API Documentation (Swagger UI): http://127.0.0.1:8000/docs
+
+### 🛑 To Deactivate Virtual Environment
+``` 
+deactivate 
+```
+---
+
 ## 🔧 Development Workflow
 
 - `main` → Stable production-ready branch
