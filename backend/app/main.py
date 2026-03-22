@@ -1,8 +1,11 @@
 from fastapi import FastAPI
+from app.core.config import get_settings
+
+settings = get_settings()
 
 app = FastAPI(
-    title="Production-Grade Analytics Platform",
-    version="1.0.0"
+    title=settings.app_name,
+    version=settings.app_version
 )
 
 @app.get("/")
